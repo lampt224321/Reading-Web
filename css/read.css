@@ -13,15 +13,15 @@
             --font-family: 'Times New Roman';
         }
 
-        [data-theme="dark"] {
-            --avocado-bg: #1a1a1a;
-            --avocado-cream: #2d2d2d;
-            --text-dark: #e2e8f0;
-            --text-muted: #a0aec0;
-            --border-light: #4a5568;
-            --avocado-green: #8FBC8F; 
-            --avocado-dark: #9ACD32;
-            --shadow: 0 2px 8px rgba(255,255,255,0.1);
+        html[data-theme="dark"] {
+            --avocado-bg: #1a1a1a !important;
+            --avocado-cream: #2d2d2d !important;
+            --text-dark: #e2e8f0 !important;
+            --text-muted: #a0aec0 !important;
+            --border-light: #4a5568 !important;
+            --avocado-green: #9ACD32 !important;
+            --avocado-dark: #b0ff4e !important;
+            --shadow: 0 2px 8px rgba(255,255,255,0.05) !important;
         }
 
         * {
