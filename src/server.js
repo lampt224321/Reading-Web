@@ -15,9 +15,9 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/intro.html');
-});
+// app.get('/', (req, res) => {
+//  res.sendFile(__dirname + '/intro.html');
+// });
 
 const authRoutes = require('./routes/authRoutes');
 app.use('/api/auth', authRoutes);
@@ -31,7 +31,7 @@ app.use('/api/admin', adminRoutes);
 app.use('/uploads', express.static('uploads'));
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
